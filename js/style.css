@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Oswald:wght@200..700&display=swap'); 
+
+    body {
+        --royal-blue-traditional: #00296b;
+        --marian-blue: #003f88ff;
+        --polynesian-blue: rgb(0, 66, 128);
+        --mikado-yellow: #fdc500ff;
+        --gold: #ffd500ff;
+        --white: #edf2f4;
+
+
+      background-color: var(--white);
+      font-family: "Bowlby One SC", sans-serif;
+      color: #00296b;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Menu */
+    nav {
+      font-family: "Oswald", sans-serif;
+      background-color: var(--royal-blue-traditional);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      margin: 0 25px;
+      text-decoration: none;
+      color: var(--polynesian-blue);
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: var(--mikado-yellow);
+      padding: 10px;
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+      background-color: var(--gold);
+      color: var(--royal-blue-traditional);
+      transform: rotate(2deg) scale(1.05);
+    }
+
+    header {
+      background-color: var(--white);
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 60px;
+      text-shadow: 3px 3px var(--marian-blue);
+      color: var(--mikado-yellow);
+    }
+
+    h2 {
+        font-size: 30px;
+        color: var(--mikado-yellow);
+        font-family: "Oswald", sans-serif;
+    }
+
+    .produto {
+      background-color: var(--royal-blue-traditional);
+      margin: 10px;
+      border-radius: 10px;
+      padding: flex;
+      width: 30%;
+    }
+
+    button {
+      background-color: var(--mikado-yellow);
+      color: var(--polynesian-blue);
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+
+    /* Carrossel Caótico */
+    .carrossel {
+      margin: 40px auto;
+      width: 80%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      width: 400%;
+    }
+
+    .slide {
+      width: 50%;
+      flex-shrink: 0;
+      font-size: 22px;
+      background-color: var(--royal-blue-traditional);
+      align-items: center;
+      justify-content: center;
+      animation: desliza 70s infinite linear;
+    }
+
+    .slide {
+        color: var(--mikado-yellow);
+    }
+
+    .slide2 {
+        color: var(--mikado-yellow);
+    }
+
+    @keyframes desliza {
+      0% { transform: translateX(0%); }
+      25% { transform: translateX(-100%); }
+      50% { transform: translateX(-200%); }
+      75% { transform: translateX(-300%); }
+      100% { transform: translateX(0%); }
+    }
+
+    @keyframes treme {
+      0% { transform: rotate(-2deg); }
+      100% { transform: rotate(2deg); }
+    }
+
+    img.pixel {
+      width: 10%;
+      height: auto;
+      image-rendering: pixelated;
+      border: 3px solid red;
+      margin: 10px
+    }
